@@ -174,42 +174,226 @@ label {
     list-style: none;
 }
 
+.count .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.count .box-container .box{
+    background-color: var(--light-bg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.count .box-container .box i {
+    font-size: 5rem;
+    color: var(--green);
+}
+
+.count .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.count .box-container .box .content p {
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    text-align: center;
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.about .row .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.about h1.heading {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.about .row .content .btn {
+    background-color: #7f7f7f;
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact h1.heading {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+}
+
+.contact .row form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+} 
+
+.contact .row form span{
+    font-size: 1.5rem;
+    color: var(--light-white);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--light-bg);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
 /* button {
     border: 2px solid black;
     border-radius: 30px;
 } */
 
-button.btn-fill-lg.btn-gradient-yellow.btn-hover-bluedark {
+/* download button css */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* margin: auto; */
+    display: flex;
+    flex: 1 1 40rem;
+
+}
+
+h1.str{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container .head{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    position: relative;
+    border:none;
+    outline: none;
     border-radius: 10px;
-    border: 1px solid black;
-    height: 3rem;
-    width: 8rem;
-}   
+    box-shadow: 0 3px 3px #aaa;
+    margin: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 20px;
+    box-sizing: border-box;
 
-button.btn-fill-lg.bg-blue-dark.btn-hover-yellow {
-    border-radius: 10px;
-    border: 1px solid black;
-    height: 3rem;
-    width: 8rem;
 }
 
-.col-xl-3.col-lg-6.col-12.form-group {
-    padding: 10px;
-    margin: 12px;
+button::after {
+    content: "";
+    position: absolute;
+    background-color: salmon;
+    width: 30px;
+    margin-right: 155px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    transform: skew(-30deg);
+} 
+button::before{
+    content:"download";
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    background-color: salmon;
+    width: 170px;
+    bottom: 0;
+    top: 0;
+    right: 0;
 }
 
-.col-12.form-group.mg-t-8 {
-    padding: 10px;
-    margin: 10px;
+/* button:nth-child(2)::after,form button:nth-child(2)::before{
+    background-color: skyblue;
+}
+button:nth-child(4)::after,form button:nth-child(4)::before{
+    background-color: #47b39d;
+}
+button:nth-child(5)::after,form button:nth-child(5)::before{
+    background-color: #ffc153;
+} */
+button:hover{
+    filter: brightness(.8);
 }
 
-.col-lg-6.col-12.form-group {
-    padding-left: 10px;
-}
 
-
-
-
+/* button end */
 
 
 

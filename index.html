@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   -->
+    <!-- <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>OneStop</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+
+        <section class="flex">
+          <img src="logo.png" alt="" style="height: 100px;">
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                
+                <a href="#contact">Contact Us</a>
+                <div class="dropdown">
+                    <a href="#stream">Stream </a>
+                <div class="dropdown-content">
+                    <ul class="stream">
+                   <li>F.E Engineering </li>
+                   <li>S.E Engineering </li>
+                   <li>T.E Engineering </li>
+                   <li>B.E Engineering </li>
+                </ul>
+                    </div>
+                </div>
+            </nav>
+
+          
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+
+    </header>
+<!-- header end -->
+ <!-- home  -->
+ <section class="home" id="home">
+
+    <div class="row">
+        <div class="content">
+            <h3>Books PYQs <span>& More</span></h3>
+            <!-- <a href="#contact" class="btn" >contact us</a> -->
+        </div>
+   
+
+    <div class="image">
+        <img src="slider.svg" alt="">
+    </div>
+</div>
+ </section>
+
+<!-- middle section here -->
+<section class="count">
+<div class="box-container">
+    
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+            <div class="content">
+                <h3>Multiple</h3>
+                <p>Streams</p>
+            </div>
+
+        </div>
+  
+    <div class="box">
+        <i class="fas fa-user-graduate"></i>
+            <div class="content">
+                <h3>1500+</h3>
+                <p>Contributers</p>
+            </div>
+
+        </div>
+    <div class="box">
+        <i class="fas fa-chalkboard-user"></i>
+            <div class="content"> 
+                <h3>100%</h3>
+                <p>Genuine Books</p>
+            </div>
+
+        </div>
+
+</div>
+</section>
+<br>
+<br>
+
+<section class="about" id="about">
+    <h1 class="heading">About<span> Us</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="hangover-rafiki.svg">
+        </div>
+        <div class="content">
+            <h3>Why Choose Us?</h3>
+            <p>
+                ONE'STOP is a website dedicated to providing university students with unrestricted access to their study materials and textbooks for their current semester. Our goal is to simplify the learning process and promote accessibility by providing students with a centralized platform to access soft copies of their required textbooks. With our user-friendly interface, advanced search algorithm, and unrestricted access to textbooks, we strive to enhance the learning experience of students and contribute to their academic success. </p>
+            <!-- <a href="#contact" class="btn" >Contact Us</a>  -->
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">Contact<span> Us</span></h1>
+
+    <div class="row">
+
+    <div class="image">
+        <img src="Mention-cuate.svg" alt="">
+    </div>
+
+    <form action=""  method="post">
+        <span>
+            Full Name
+        </span>
+        <input type="text" required placeholder="Enter your Full Name " name="name" class="box" maxlength="50">
+        <span>
+            Your Email
+        </span>
+        <input type="email" required placeholder="Enter your vald e-mail id " name="email" class="box" maxlength="50">
+        <span>
+            Your Phone Number
+        </span>
+        <input type="number" required placeholder="Enter your valid phone number " name="number" class="box" maxlength="9999999" onkeypress="if(this.value.lenght == 10) return false;">
+        <span>
+            Select Your Stream
+        </span>
+        <select name = "Stream" class="box" required>
+        <option value="" disabled selected>
+          Select Your Stream---
+        </option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Computer Science (AI&ML)">Computer Science(AI & ML)</option>
+        <option value="Computer Science(AI & DS)">Computer Science(AI & DS)</option>
+        <option value="IT">IT</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civil">Civil</option>
+        <option value="EXTC">EXTC</option>
+    </select>
+    <input type="submit" value="Send Message " class="btn" name="send">
+    </form>
+</div>
+</section>
+
+
+<section class="notes">
+    <h1 class="str">Engineering SEM 4 Books</h1>
+    <div class="container">
+        <div class="head">
+            <h1 >Engineering Maths 4</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/Maths 4 Kumbhojkar Latest 2021.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Analysis Of Algorithm</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/Thomas Cormen - Introduction_To_Algorithms.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Database Management System</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/DBMS TECHMAX 2019 SEARCHABLE.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Microprocessor </h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/MP (Microprocessor).pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Operating System </h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/OS Techmax.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+</section>
+
+<section class="notes">
+    <h1 class="str">Engineering SEM 4 PYQS</h1>
+    <div class="container">
+        <div class="head">
+            <h1 >Engineering Maths 4 Question Paper</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/be_computer-engineering_semester-4_2022_may_engineering-mathematicsivrev-2019-c-scheme.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Analysis Of Algorithm Question Paper</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/be_computer-engineering_semester-4_2022_may_analysis-of-algorithmrev-2019-c-scheme.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Database Management System Question Paper</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/be_computer-engineering_semester-4_2022_may_database-management-systemrev-2019-c-scheme.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Microprocessor Question Paper</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/be_computer-engineering_semester-4_2022_may_microprocessorrev-2019-c-scheme.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+      <div class="container">
+        <div class="head">
+            <h1 >Operating System Question Paper</h1>
+        </div>
+        <form>
+          <button type="submit" onclick="window.open('notes/be_computer-engineering_semester-4_2022_may_operating-systemrev-2019-c-scheme.pdf')"><i class="fa fa-download"></i></button>  
+        </form>
+      </div>
+</section>
+    <!-- javascript file -->
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
